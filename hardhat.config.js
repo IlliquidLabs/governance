@@ -37,6 +37,15 @@ module.exports = {
         version: "0.6.11"
       },
       {
+        version: "0.6.12",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200
+          }
+        }        
+      },
+      {
         version: "0.7.4"
       },
       {
@@ -62,12 +71,12 @@ module.exports = {
   networks: {
     arbitrum: {
       url: "https://arb1.arbitrum.io/rpc",
-      accounts: [process.env.DEPLOYER_PK],
+     // accounts: [process.env.DEPLOYER_PK],
       chainId: 42161
     },
     rinkeby: {
-      url: process.env.INFURARINKEBY,
-      accounts: [process.env.DEPLOYER_PK],
+      url: "https://rinkeby-light.eth.linkpool.io/",
+      //accounts: [process.env.DEPLOYER_PK],
       chainId: 4
     }
     }

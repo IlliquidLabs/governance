@@ -6,7 +6,7 @@ const { ethers } = require('hardhat');
 const Web3 = require('web3');
 let web3 = new Web3('http://localhost:9560');
 
-const OWNER_ADDRESS = ethers.utils.getAddress("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266");
+const OWNER_ADDRESS = ethers.utils.getAddress("0xB4E4dD051162e567336DDAe9e86eb03C1f8d5C04");
 
 const oneToken = BigNumber.from("1000000000000000000");
 

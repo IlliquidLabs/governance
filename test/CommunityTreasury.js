@@ -4,7 +4,7 @@ const { expect } = require('chai');
 const { BigNumber } = require('ethers');
 const { ethers } = require('hardhat');
 
-const OWNER_ADDRESS = ethers.utils.getAddress("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266");
+const OWNER_ADDRESS = ethers.utils.getAddress("0xB4E4dD051162e567336DDAe9e86eb03C1f8d5C04");
 
 const oneToken = BigNumber.from("1000000000000000000");
 

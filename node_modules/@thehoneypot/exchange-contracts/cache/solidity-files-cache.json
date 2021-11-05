@@ -1,0 +1,1694 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/HoneyERC20.sol": {
+      "lastModificationDate": 1636028108615,
+      "contentHash": "bb1dc44d2db68e14c1da6694ceb74043",
+      "sourceName": "contracts/honey-core/HoneyERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHoneyERC20.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HoneyERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/libraries/SafeMath.sol": {
+      "lastModificationDate": 1635956785032,
+      "contentHash": "a65356c329efeffba75210664f5df3cd",
+      "sourceName": "contracts/honey-core/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/test/ERC20.sol": {
+      "lastModificationDate": 1635956785024,
+      "contentHash": "70bec2c182d8bf085c96f01da285def1",
+      "sourceName": "contracts/honey-core/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../HoneyERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/HoneyPair.sol": {
+      "lastModificationDate": 1635956784689,
+      "contentHash": "7518ad304e5eee04097ca22349955c53",
+      "sourceName": "contracts/honey-core/HoneyPair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHoneyPair.sol",
+        "./HoneyERC20.sol",
+        "./libraries/Math.sol",
+        "./libraries/UQ112x112.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IHoneyFactory.sol",
+        "./interfaces/IHoneyCallee.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HoneyPair"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/libraries/Math.sol": {
+      "lastModificationDate": 1635956785044,
+      "contentHash": "bee6c1959728d5d42c14151076cebd83",
+      "sourceName": "contracts/honey-core/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/libraries/UQ112x112.sol": {
+      "lastModificationDate": 1635956785038,
+      "contentHash": "2a703244e9f645c6fb297a983ce7c9c4",
+      "sourceName": "contracts/honey-core/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/HoneyFactory.sol": {
+      "lastModificationDate": 1635956784684,
+      "contentHash": "3511ca96922b75ad9e928e44208e39d7",
+      "sourceName": "contracts/honey-core/HoneyFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHoneyFactory.sol",
+        "./HoneyPair.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HoneyFactory"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/HoneyRouter.sol": {
+      "lastModificationDate": 1635956838169,
+      "contentHash": "78567fb1901ee80046f9114fdad8b440",
+      "sourceName": "contracts/honey-periphery/HoneyRouter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../honey-core/interfaces/IHoneyFactory.sol",
+        "../honey-lib/libraries/TransferHelper.sol",
+        "./interfaces/IHoneyRouter.sol",
+        "./libraries/HoneyLibrary.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "HoneyRouter"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/ERC20.sol": {
+      "lastModificationDate": 1635956784727,
+      "contentHash": "3c84c6f456884e55b360a8450d0f0446",
+      "sourceName": "contracts/honey-periphery/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/DeflatingERC20.sol": {
+      "lastModificationDate": 1635956784731,
+      "contentHash": "7476ba791f9afb6f870f10560972e0a0",
+      "sourceName": "contracts/honey-periphery/test/DeflatingERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "DeflatingERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/RouterEventEmitter.sol": {
+      "lastModificationDate": 1636028387229,
+      "contentHash": "8fd6b9a60e0fdbb43ab243cc63162bd5",
+      "sourceName": "contracts/honey-periphery/test/RouterEventEmitter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IHoneyRouter.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "RouterEventEmitter"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/libraries/SafeMath.sol": {
+      "lastModificationDate": 1635956784768,
+      "contentHash": "e608df41fb534f6cf57e741ba56d6e28",
+      "sourceName": "contracts/honey-periphery/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/libraries/HoneyLibrary.sol": {
+      "lastModificationDate": 1635956784762,
+      "contentHash": "100b7e5612c4502bbeda326de72ac462",
+      "sourceName": "contracts/honey-periphery/libraries/HoneyLibrary.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../honey-core/interfaces/IHoneyFactory.sol",
+        "../../honey-core/interfaces/IHoneyPair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "HoneyLibrary"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/libraries/UniswapV2OracleLibrary.sol": {
+      "lastModificationDate": 1635956784765,
+      "contentHash": "45fccc4a6c51afd69b2fd4dcdefcf6d1",
+      "sourceName": "contracts/honey-periphery/libraries/UniswapV2OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../honey-core/interfaces/IHoneyPair.sol",
+        "../../honey-lib/libraries/FixedPoint.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "HoneyOracleLibrary"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/libraries/FixedPoint.sol": {
+      "lastModificationDate": 1635956785208,
+      "contentHash": "c492cc83c3a6af9b3ea57a6ae117c296",
+      "sourceName": "contracts/honey-lib/libraries/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./Babylonian.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0 <0.8.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/libraries/FullMath.sol": {
+      "lastModificationDate": 1635956785295,
+      "contentHash": "6b99176c255e27b4447fec2da7e63558",
+      "sourceName": "contracts/honey-lib/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0 <0.8.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/FixedPointTest.sol": {
+      "lastModificationDate": 1635956785167,
+      "contentHash": "667fbf4f1d27b4031969e7eff4acd72b",
+      "sourceName": "contracts/honey-lib/test/FixedPointTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/FixedPoint.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "FixedPointTest"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/FullMathTest.sol": {
+      "lastModificationDate": 1635956785146,
+      "contentHash": "748eba321c0f5b6dd491849a37e2ce81",
+      "sourceName": "contracts/honey-lib/test/FullMathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/FullMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FullMathTest"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/HoneyBridgeMigrationRouter.sol": {
+      "lastModificationDate": 1635956784648,
+      "contentHash": "094c846840e9e060768608ba36de0f7a",
+      "sourceName": "contracts/honey-periphery/HoneyBridgeMigrationRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../honey-core/interfaces/IHoneyERC20.sol",
+        "../honey-lib/libraries/TransferHelper.sol",
+        "./interfaces/IBridgeToken.sol",
+        "./libraries/Roles.sol",
+        "./libraries/HoneyLibrary.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "HoneyBridgeMigrationRouter"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/libraries/Roles.sol": {
+      "lastModificationDate": 1635956784760,
+      "contentHash": "1761d6697479e3623e7118c9cc658e53",
+      "sourceName": "contracts/honey-periphery/libraries/Roles.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Roles"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/BridgeToken.sol": {
+      "lastModificationDate": 1635956784743,
+      "contentHash": "4ec6f4b90e8b1747005ad6b6c2e81a1a",
+      "sourceName": "contracts/honey-periphery/test/BridgeToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./library/openzeppelin/ERC20Burnable.sol",
+        "../libraries/Roles.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "BridgeToken"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/library/openzeppelin/ERC20Burnable.sol": {
+      "lastModificationDate": 1635956784887,
+      "contentHash": "19f0f737ec8d5c885b66db136029fcb4",
+      "sourceName": "contracts/honey-periphery/test/library/openzeppelin/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol",
+        "./ERC20.sol",
+        "./OpenZeppelinSafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/library/openzeppelin/Context.sol": {
+      "lastModificationDate": 1635956784894,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "contracts/honey-periphery/test/library/openzeppelin/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/library/openzeppelin/ERC20.sol": {
+      "lastModificationDate": 1635956784884,
+      "contentHash": "bb8f6d2508738bb6281a7f8964cc1617",
+      "sourceName": "contracts/honey-periphery/test/library/openzeppelin/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol",
+        "./IERC20.sol",
+        "./OpenZeppelinSafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/library/openzeppelin/OpenZeppelinSafeMath.sol": {
+      "lastModificationDate": 1635956784900,
+      "contentHash": "cf8189f41b2e7eaa038145dc14734fe2",
+      "sourceName": "contracts/honey-periphery/test/library/openzeppelin/OpenZeppelinSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "OpenZeppelinSafeMath"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/test/library/openzeppelin/IERC20.sol": {
+      "lastModificationDate": 1635956784881,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "contracts/honey-periphery/test/library/openzeppelin/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/TransferHelperTest.sol": {
+      "lastModificationDate": 1636028335509,
+      "contentHash": "91a1e0d502ae4dd3623ed1943e9ad920",
+      "sourceName": "contracts/honey-lib/test/TransferHelperTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/TransferHelper.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "TransferHelperTest",
+        "TransferHelperTestFakeERC20Compliant",
+        "TransferHelperTestFakeERC20Noncompliant",
+        "TransferHelperTestFakeFallback"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/libraries/AddressStringUtil.sol": {
+      "lastModificationDate": 1635956785199,
+      "contentHash": "363f88e45bb2b2b1bd36529e88445668",
+      "sourceName": "contracts/honey-lib/libraries/AddressStringUtil.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "AddressStringUtil"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/AddressStringUtilTest.sol": {
+      "lastModificationDate": 1635956785179,
+      "contentHash": "4f11fc00c5e5de06d1d8a7cb46af28fe",
+      "sourceName": "contracts/honey-lib/test/AddressStringUtilTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/AddressStringUtil.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "AddressStringUtilTest"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/libraries/SafeERC20Namer.sol": {
+      "lastModificationDate": 1635956785189,
+      "contentHash": "8ab2e10564b4edc6113b3a3f4b373ba2",
+      "sourceName": "contracts/honey-lib/libraries/SafeERC20Namer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AddressStringUtil.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SafeERC20Namer"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/SafeERC20NamerTest.sol": {
+      "lastModificationDate": 1635956785159,
+      "contentHash": "7909f1becab0f21dc826cdfbdbf712b2",
+      "sourceName": "contracts/honey-lib/test/SafeERC20NamerTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeERC20Namer.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "NamerTestFakeCompliantERC20",
+        "NamerTestFakeNoncompliantERC20",
+        "NamerTestFakeOptionalERC20",
+        "SafeERC20NamerTest"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/libraries/PairNamer.sol": {
+      "lastModificationDate": 1635956785216,
+      "contentHash": "65a5abc6522e122e610ce8b8a727d35c",
+      "sourceName": "contracts/honey-lib/libraries/PairNamer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20Namer.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PairNamer"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/PairNamerTest.sol": {
+      "lastModificationDate": 1635956785174,
+      "contentHash": "34b67ca04b59e329a28fa01fdcc609af",
+      "sourceName": "contracts/honey-lib/test/PairNamerTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/PairNamer.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PairNamerTest",
+        "PairNamerTestFakeToken"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/interfaces/IHoneyCallee.sol": {
+      "lastModificationDate": 1635956785077,
+      "contentHash": "d349736f96e3de3d1da4f0f029908728",
+      "sourceName": "contracts/honey-core/interfaces/IHoneyCallee.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyCallee"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/interfaces/IHoneyFactory.sol": {
+      "lastModificationDate": 1635956785117,
+      "contentHash": "af2180d9d08ec23be589129ab7e1bf35",
+      "sourceName": "contracts/honey-core/interfaces/IHoneyFactory.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyFactory"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/interfaces/IWETH.sol": {
+      "lastModificationDate": 1635956784953,
+      "contentHash": "2e6219c30390bbbca9c29c67fb93db3c",
+      "sourceName": "contracts/honey-periphery/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/interfaces/IERC20.sol": {
+      "lastModificationDate": 1635956784949,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/honey-periphery/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/interfaces/IHoneyPair.sol": {
+      "lastModificationDate": 1635956785123,
+      "contentHash": "210e221e10abe9ea53d80daf649d2333",
+      "sourceName": "contracts/honey-core/interfaces/IHoneyPair.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyPair"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/libraries/Babylonian.sol": {
+      "lastModificationDate": 1635956785222,
+      "contentHash": "6cc4613388b672fbb792b9f6e2e28399",
+      "sourceName": "contracts/honey-lib/libraries/Babylonian.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "Babylonian"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/BabylonianTest.sol": {
+      "lastModificationDate": 1635956785135,
+      "contentHash": "dd07fae84a9baaa9b22287a2efc39e3f",
+      "sourceName": "contracts/honey-lib/test/BabylonianTest.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Babylonian.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "BabylonianTest"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/test/BabylonianEchidnaTest.sol": {
+      "lastModificationDate": 1635956785154,
+      "contentHash": "fbf66d9eea57817e3566b7a5fc28c817",
+      "sourceName": "contracts/honey-lib/test/BabylonianEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Babylonian.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "BabylonianEchidnaTest"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/interfaces/IBridgeToken.sol": {
+      "lastModificationDate": 1635956784960,
+      "contentHash": "743f56c1c6d17657a15d9bdaad77fe00",
+      "sourceName": "contracts/honey-periphery/interfaces/IBridgeToken.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../honey-core/interfaces/IHoneyERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IBridgeToken"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/interfaces/IHoneyERC20.sol": {
+      "lastModificationDate": 1635956785127,
+      "contentHash": "fa90040b03a5024cf5858f7917875442",
+      "sourceName": "contracts/honey-core/interfaces/IHoneyERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-lib/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1636028341439,
+      "contentHash": "92842922f894aff3f03a175fa2684753",
+      "sourceName": "contracts/honey-lib/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-periphery/interfaces/IHoneyRouter.sol": {
+      "lastModificationDate": 1636028321996,
+      "contentHash": "bcf07060c3bb15bc3c7552dc245ad245",
+      "sourceName": "contracts/honey-periphery/interfaces/IHoneyRouter.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IHoneyRouter"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/Honey/exchange-contracts/contracts/honey-core/interfaces/IERC20.sol": {
+      "lastModificationDate": 1635956785071,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/honey-core/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    }
+  }
+}
